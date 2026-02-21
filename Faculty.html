@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Faculty - Eduford University</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background-image: url("https://propakistani.pk/wp-content/uploads/2023/10/Punjab-University.jpg");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: #333;
+    }
+
+    /* Header Section */
+    .header {
+      min-height: 60vh;
+      width: 100%;
+      background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+        url("https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1350&q=80");
+      background-position: center;
+      background-size: cover;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0;
+    }
+
+    nav img {
+      width: 90px;
+      height: auto;
+      object-fit: contain;
+    }
+
+    .nav-links ul {
+      list-style: none;
+    }
+
+    .nav-links ul li {
+      display: inline-block;
+      margin: 0 15px;
+    }
+
+    .nav-links ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links ul li a:hover {
+      color: #f44336;
+    }
+
+    .header h1 {
+      font-size: 52px;
+      margin-top: 100px;
+    }
+
+    /* Faculty Section */
+    .faculty-section {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 80px 60px;
+      text-align: center;
+      backdrop-filter: blur(4px);
+    }
+
+    .faculty-section h2 {
+      font-size: 36px;
+      color: #111;
+      margin-bottom: 40px;
+    }
+
+    .faculty-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .faculty-card {
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: all 0.3s ease;
+      max-width: 800px; /* Increased width */
+      margin: 0 auto; /* Center the card */
+    }
+
+    .faculty-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+    }
+
+    .faculty-card img {
+      width: 100%;
+      height: 800px; /* Increased height */
+      object-fit: cover; /* Ensures proper fitting */
+    }
+
+    .faculty-content {
+      padding: 25px;
+    }
+
+    .faculty-content h3 {
+      color: #222;
+      font-size: 24px; /* Slightly larger font */
+      margin-bottom: 12px;
+    }
+
+    .faculty-content p {
+      color: #666;
+      font-size: 16px; /* Slightly larger font */
+      margin-bottom: 10px;
+      line-height: 1.6; /* Better readability */
+    }
+
+    .faculty-content span {
+      display: block;
+      font-size: 16px; /* Slightly larger font */
+      color: #f44336;
+      font-weight: 500;
+      margin-top: 10px;
+    }
+
+    /* Footer Section */
+    footer {
+      background: rgba(0, 0, 0, 0.85);
+      color: #ddd;
+      padding: 60px 40px;
+      text-align: center;
+    }
+
+    footer h3 {
+      margin-bottom: 15px;
+      font-size: 22px;
+      color: #fff;
+    }
+
+    footer p {
+      font-size: 15px;
+      color: #aaa;
+      max-width: 700px;
+      margin: 10px auto;
+      line-height: 1.6;
+    }
+
+    footer .footer-bottom {
+      border-top: 1px solid #444;
+      margin-top: 30px;
+      padding-top: 15px;
+      font-size: 14px;
+      color: #888;
+    }
+
+    @media (max-width: 700px) {
+      nav {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .header h1 {
+        font-size: 32px;
+      }
+
+      .faculty-section {
+        padding: 50px 20px;
+      }
+      
+      .faculty-card {
+        max-width: 100%; /* Full width on mobile */
+        max-height: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <section class="header">
+    <nav>
+      <a href="#"><img src="https://tse1.mm.bing.net/th/id/OIP.XTs5zI-Kf10EB57NxC_51AAAAA?pid=Api&P=0&h=220" alt="Eduford Logo" /></a>
+      <div class="nav-links">
+        <ul>
+          <li><a href="Uni.html">HOME</a></li>
+          <li><a href="About.html">ABOUT</a></li>
+          <li><a href="Courses.html">COURSE</a></li>
+         <li><a href="Faculty.html">OUR DIRECTOR</a></li>
+          <li><a href="Contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+    </nav>
+    <h1>Meet Our Faculty</h1>
+  </section>
+
+  <!-- Faculty Section -->
+  <section class="faculty-section">
+    <h2>Our Esteemed Professor</h2>
+
+      <div class="faculty-card">
+        <img src="https://media.licdn.com/dms/image/v2/D4D03AQFT0u5szxF_gA/profile-displayphoto-shrink_200_200/B4DZSj8xuhHIAY-/0/1737917410587?e=2147483647&v=beta&t=rvriYiYLby2yIz46kLmkV1O_ViChWKpwLHxyv50UeVg" alt="Dr. Anum Tariq">
+        <div class="faculty-content">
+          <h3>Prof.Dr_Muhammad Imtiaz Shafiq</h3>
+          <p>It is a privilege to lead the Skill Development Centre (SDC) at the University of the Punjab. We provide demand-driven and affordable short courses and training programs designed to equip participants with essential technical, professional, and transferable skills for the digital era. SDC is dedicated to fostering innovation and excellence by offering learning opportunities guided by expert faculty and trainers. We invite you to join us and unlock your full potential for success.</p>
+          <span>PhD in Development Economics</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <h3>About Punjab University</h3>
+    <p>
+      Our faculty members are leaders in their fields, dedicated to guiding students toward academic excellence and research innovation.
+    </p>
+    <div class="footer-bottom">
+      © 2025 Punjab University | All Rights Reserved
+    </div>
+  </footer>
+</body>
+</html>

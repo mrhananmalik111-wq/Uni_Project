@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Eduford University</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background-image: url("https://propakistani.pk/wp-content/uploads/2023/10/Punjab-University.jpg");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: #333;
+    }
+
+    /* Header Section */
+    .header {
+      min-height: 60vh;
+      width: 100%;
+      background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+        url("https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1350&q=80");
+      background-position: center;
+      background-size: cover;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0;
+    }
+
+    nav img {
+      width: 90px;
+      height: auto;
+      object-fit: contain;
+    }
+
+    .nav-links ul {
+      list-style: none;
+    }
+
+    .nav-links ul li {
+      display: inline-block;
+      margin: 0 15px;
+    }
+
+    .nav-links ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links ul li a:hover {
+      color: #f44336;
+    }
+
+    .header h1 {
+      font-size: 52px;
+      margin-top: 100px;
+    }
+
+    /* Map Section */
+    .map-section {
+      padding: 60px 30px;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(5px);
+    }
+
+    iframe {
+      width: 100%;
+      max-width: 900px;
+      height: 400px;
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Footer */
+    footer {
+      background: rgba(0, 0, 0, 0.88);
+      color: #ddd;
+      padding: 40px 0;
+      text-align: center;
+    }
+
+    .social-icons {
+      margin-top: 15px;
+    }
+
+    .social-icons a {
+      text-decoration: none;
+      color: white;
+      margin: 0 15px;
+      font-size: 26px;
+      display: inline-block;
+      transition: all 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      color: #f44336;
+      transform: translateY(-4px);
+    }
+
+    .footer-bottom {
+      margin-top: 25px;
+      font-size: 14px;
+      color: #888;
+    }
+
+    @media (max-width: 700px) {
+      nav {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .header h1 {
+        font-size: 32px;
+      }
+
+      iframe {
+        height: 300px;
+      }
+    }
+  </style>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <section class="header">
+    <nav>
+      <a href="#"><img src="https://tse1.mm.bing.net/th/id/OIP.XTs5zI-Kf10EB57NxC_51AAAAA?pid=Api&P=0&h=220" alt="Eduford Logo" /></a>
+      <div class="nav-links">
+        <ul>
+          <li><a href="Uni.html">HOME</a></li>
+          <li><a href="About.html">ABOUT</a></li>
+          <li><a href="Courses.html">COURSE</a></li>
+         <li><a href="Faculty.html">OUR DIRECTOR</a></li>
+          <li><a href="Contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+    </nav>
+    <h1>Contact Us</h1>
+  </section>
+
+  <!-- Map -->
+  <section class="map-section">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27216.53699171657!2d74.3041!3d31.4993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190b6e77a7b4bb%3A0x7a0e4e9cfcf2f3a7!2sUniversity%20of%20the%20Punjab!5e0!3m2!1sen!2s!4v1696605000000"
+      allowfullscreen=""
+      loading="lazy">
+    </iframe>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://maps.app.goo.gl/k7HHNnE7j7oXb7mY7" target="_blank"><i class="fas fa-map-marker-alt"></i></a>
+      <a href="mailto:info@eduforduniversity.edu.pk"><i class="fas fa-envelope"></i></a>
+      <a href="tel:+923001234567"><i class="fas fa-phone-alt"></i></a>
+    </div>
+
+    <div class="footer-bottom">
+      © 2025 Punjab University | All Rights Reserved
+    </div>
+  </footer>
+</body>
+</html>

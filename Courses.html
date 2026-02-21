@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Courses - Eduford University</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background-image: url("https://propakistani.pk/wp-content/uploads/2023/10/Punjab-University.jpg");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: #333;
+    }
+
+    /* Header Section */
+    .header {
+      min-height: 60vh;
+      width: 100%;
+      background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+        url("https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1350&q=80");
+      background-position: center;
+      background-size: cover;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0;
+    }
+
+    nav img {
+      width: 90px;
+      height: auto;
+      object-fit: contain;
+    }
+
+    .nav-links ul {
+      list-style: none;
+    }
+
+    .nav-links ul li {
+      display: inline-block;
+      margin: 0 15px;
+    }
+
+    .nav-links ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links ul li a:hover {
+      color: #f44336;
+    }
+
+    .header h1 {
+      font-size: 52px;
+      margin-top: 100px;
+    }
+
+    /* Courses Section */
+    .courses-section {
+      background: rgba(255, 255, 255, 0.92);
+      padding: 80px 60px;
+      text-align: center;
+      backdrop-filter: blur(4px);
+    }
+
+    .courses-section h2 {
+      font-size: 36px;
+      color: #111;
+      margin-bottom: 30px;
+    }
+
+    .course-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-top: 50px;
+    }
+
+    .course-card {
+      background: #fff;
+      border-radius: 15px;
+      padding: 25px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    .course-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+    }
+
+    .course-card h3 {
+      color: #222;
+      margin-bottom: 12px;
+      font-size: 20px;
+    }
+
+    .course-card p {
+      font-size: 15px;
+      color: #666;
+      line-height: 1.6;
+    }
+
+    /* Footer Section */
+    footer {
+      background: rgba(0, 0, 0, 0.8);
+      color: #ddd;
+      padding: 60px 40px;
+      text-align: center;
+    }
+
+    footer h3 {
+      margin-bottom: 15px;
+      font-size: 22px;
+      color: #fff;
+    }
+
+    footer p {
+      font-size: 15px;
+      color: #aaa;
+      max-width: 700px;
+      margin: 10px auto;
+      line-height: 1.6;
+    }
+
+    footer .footer-bottom {
+      border-top: 1px solid #444;
+      margin-top: 30px;
+      padding-top: 15px;
+      font-size: 14px;
+      color: #888;
+    }
+
+    @media (max-width: 700px) {
+      nav {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .header h1 {
+        font-size: 32px;
+      }
+
+      .courses-section {
+        padding: 50px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <section class="header">
+    <nav>
+      <a href="#"><img src="https://tse1.mm.bing.net/th/id/OIP.XTs5zI-Kf10EB57NxC_51AAAAA?pid=Api&P=0&h=220" alt="Eduford Logo" /></a>
+      <div class="nav-links">
+        <ul>
+          <li><a href="Uni.html">HOME</a></li>
+          <li><a href="About.html">ABOUT</a></li>
+          <li><a href="Courses.html">COURSE</a></li>
+          <li><a href="Faculty.html">OUR DIRECTOR</a></li>
+         
+          <li><a href="Contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+    </nav>
+    <h1>Our Courses</h1>
+  </section>
+
+  <!-- Courses Section -->
+  <section class="courses-section">
+    <h2>Popular Programs We Offer</h2>
+    <p>Punajb University provides a wide range of academic programs designed to equip students with modern skills and global exposure.</p>
+
+    <div class="course-grid">
+      <div class="course-card">
+        <h3>🎓 Artificial Inteligence</h3>
+        <p>Technology that allows machines to mimic human intelligence.
+Used in chatbots, self-driving cars, and data analysis.</p>
+      </div>
+
+      <div class="course-card">
+        <h3>💼 Web Designing</h3>
+        <p>Creating the layout, colors, and user interface of websites.
+Uses HTML, CSS, and JavaScript to make websites attractive and user-friendly.</p>
+      </div>
+
+      <div class="course-card">
+        <h3>⚙️ Digital_Marketing</h3>Promoting products or services online through social media, SEO, and ads.
+Helps businesses reach more customers effectively on digital platforms.</p>
+      </div>
+
+      <div class="course-card">
+        <h3>🧪 IELTS</h3>
+        <p>An English test that evaluates your speaking, listening, reading, and writing skills for study or work abroad.
+A high score improves your chances for visas and admissions.</p>
+      </div>
+
+      <div class="course-card">
+        <h3>📊 Cyber Security</h3>
+        <p>Protects computers, networks, and data from hackers and threats.
+Focuses on keeping information safe and secure online.</p>
+      </div>
+
+      <div class="course-card">
+        <h3>🎭 Phython Programing</h3>
+        <p>A simple yet powerful programming language used worldwide.
+Applied in AI, web development, data science, and automation.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <h3>About Punjab University</h3>
+    <p>
+      Punjab University is dedicated to providing top-tier education and research opportunities.
+      Our aim is to nurture leaders who innovate, inspire, and impact society positively.
+    </p>
+    <div class="footer-bottom">
+      © 2025 Punjab University | All Rights Reserved
+    </div>
+  </footer>
+</body>
+</html>
